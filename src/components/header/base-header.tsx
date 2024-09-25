@@ -1,21 +1,23 @@
 import { Link } from '@tanstack/react-router';
+import { ThemeToggle } from '../global/theme-toggle';
 import { Button } from '../ui/button';
 
 export function Header() {
   return (
     <header>
-      <div className='flex items-center justify-between px-6 border-b min-h-16'>
+      <div className='flex items-center justify-between px-6 min-h-16'>
         <div>
           <Link to='/' className='font-semibold'>
             Quiz App
           </Link>
         </div>
-        <div>
+        <div className='flex items-center justify-center gap-4'>
           <Button variant='outline' asChild>
             <a href='https://github.com/rahulpeacock' target='_blank' rel='noreferrer'>
               <Github />
             </a>
           </Button>
+          <ThemeToggle />
         </div>
       </div>
     </header>
