@@ -66,7 +66,7 @@ export function QuizApp() {
                   </Button>
                 </div>
               </div>
-              <div className='bg-muted min-w-[600px]'>
+              <div className='bg-muted min-w-[600px] rounded-md'>
                 <div className='p-5'>
                   <p className='font-medium pb-3'>{QUESTIONS[questionIndex].question}</p>
                   <RadioGroup
