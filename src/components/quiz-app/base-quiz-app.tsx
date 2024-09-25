@@ -35,7 +35,7 @@ export function QuizApp() {
 
   return (
     <main>
-      <section className='min-h-screen flex items-start justify-center font-poppins'>
+      <section className='flex items-start justify-center font-poppins'>
         <div className='py-24'>
           {questionIndex > QUESTIONS.length - 1 ? (
             <Score />
